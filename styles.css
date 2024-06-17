@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 14, 14);
+  margin: 0;
+  height: 100vh;
+}
+
+img {
+  width: 800px;
+  height: 533px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  aspect-ratio: auto 800/533;
+}
+
+@media (max-width: 376px) {
+  img {
+    width: 100%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  img {
+    width: 480px;
+    height: 300px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto 480/300;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  img {
+    width: 747px;
+    height: 498px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto 747/498;
+  }
+}
+
